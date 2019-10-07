@@ -1,0 +1,672 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+
+.header-position{
+  width : 135px;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: black;
+}
+
+.logo{
+  width: 100px;
+  height: 100px;
+  background-image: url(../images/Website_Logo.png);
+  background-repeat: no-repeat;
+  background-size:contain;
+  background-position: center;
+  padding: 0;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.head_nav ul{
+  list-style: none;
+  margin: 20px 0;
+  padding: 0 15px 0 0;
+  text-align: right;
+}
+
+.head_nav li{
+  margin-bottom: 10px;
+}
+.head_nav li &:last-child{
+  margin-bottom: 0px;
+}
+
+.head_nav a{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-family: 'Poiret One', cursive;
+}
+
+.head_nav_2{
+  color: white;
+  margin: 20px 0;
+  padding: 0 15px 0 0;
+  text-align: right;
+  font-size: 20px;
+}
+
+.head_nav_2:hover{
+  text-decoration: none;
+  color: white;
+}
+
+#menu{
+  background-color: white;
+  border: 0;
+}
+
+.mobile-nav{
+  display: none;
+}
+
+.mobile-nav-isopen{
+  height: 0;
+  opacity: 0
+}
+
+@media(max-width: 775px){
+  .header-position{
+    width: auto;
+    position: relative;
+    flex-direction: row;
+    height: 80px;
+  }
+  .logo{
+    width: 50px;
+    height: 50px;
+  }
+  .head_nav,.head_nav_2{
+    display: none;
+  }
+  .mobile-nav{
+    display: block;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .mobile-nav button{
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+
+  .glyphicon.glyphicon-align-justify{
+    font-size: 30px;
+  }
+
+  .mobile-nav-isopen{
+    opacity: 0;
+    width: 100%;
+    transition: all 0.2s ease-in-out;
+    overflow: hidden;
+  }
+
+  .mobile-nav-isopen ul{
+    list-style: none;
+    margin: 0;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    background-color: black;
+    border: solid 3px white;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .mobile-nav-isopen li{
+    margin: 0;
+    padding: 0;
+    margin: 2px;
+    background-color: white;
+  }
+  .mobile-nav-isopen a{
+    text-decoration: none;
+    font-family: 'Poiret One', cursive;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+.container-fluid{
+  margin: 0;
+  padding: 0;
+  margin-left:135px;
+  overflow: hidden;
+}
+
+@media(max-width: 775px){
+  .container-fluid{
+    margin: 0;
+  }
+}
+
+.back{
+  position: relative;
+  height: 75vh;
+  width: auto;
+  background-image: url("../images/background.png");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.text{
+  height: 100%;
+  background-image: url("../images/text.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position:center;
+}
+
+hr{
+  border-width: 2px;
+  border-color: rgb(203, 197, 201);
+  margin-top: 20px;
+}
+
+.bird{
+  height: 100%;
+  background-image: url("../images/bird.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center;
+  margin-top: -70vh;
+}
+
+.test{
+  height: 2000px;
+}
+
+.Title{
+  opacity: 0;
+  transform: translateY(-75px);
+  transition: all 0.6s ease-in-out;
+}
+
+.title{
+  text-align: center;
+  color: rgb(203, 197, 201);
+  font-family: 'Poiret One', cursive;
+  font-size: 90px;
+  display: block;
+}
+
+@media(max-width:775px){
+  .title{
+    font-size: 60px;
+  }
+}
+.products{
+  width: 320px;
+  height: 400px;
+  background-color: black;
+  margin: 40px;
+  margin-top: 50px;
+  margin-bottom: 80px;
+  cursor: pointer;
+}
+
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    text-align: left;
+    margin-right: 40px;
+}
+
+.row{
+  padding: 0;
+  margin: 0;
+}
+
+.glyphicon.glyphicon-play{
+  margin-right: 20px;
+  color: white;
+}
+
+.hide{
+  display: block;
+}
+
+.test{
+  height: 2000px;
+}
+
+.product_display{
+  width: 320px;
+  height: 400px;
+  background-size: contain;
+  background-position: top center;
+}
+
+.col-xs-6,.col-md-4{
+  padding: 0;
+}
+
+.product{
+  position: relative;
+  opacity: 0;
+  transform: translateX(30px);
+  transition: all 1s ease-in-out;
+}
+
+.display{
+  display: block;
+}
+
+.para{
+  color: rgb(193, 189, 189);
+  font-size: 20px;
+  font-family:
+  padding: 10px;
+}
+
+.product.display{
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+.Title.display{
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.large-window{
+  text-align: center;
+  margin-top: 30px;
+  width: 500px;
+  height:500px;
+  background-size: cover;
+  background-image: url('../images/banner_2.jpg');
+  background-position: top center;
+  background-attachment: fixed;
+  border-radius: 50%;
+}
+
+.tint{
+  background-color: rgb(0, 0, 0);
+  width: 500px;
+  height:500px;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+@media(max-width:519px){
+  .large-window{
+    width:300px;
+    height: 300px;
+  }
+  .tint{
+    width:300px;
+    height: 300px;
+  }
+}
+
+
+.price-tag{
+  width: 320px;
+  height: 40px;
+  background-color:black;
+  background-size: cover;
+  transform: translateX(-20px);
+  opacity: 0;
+  transition: 0.2s ease-in-out;
+}
+
+.visible{
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.price{
+  position: absolute;
+  color: white;
+  font-family: 'Poiret One', cursive;
+  font-style: italic;
+  margin: 10px;
+  margin-left: 30px;
+  margin-right: 5px;
+  text-align: left;
+}
+
+@media(max-width:400px){
+  .products{
+    width:260px;
+    height:375px;
+  }
+  .product_display{
+    width:260px;
+    height:375px;
+  }
+  .price-tag{
+    width: 260px;
+  }
+}
+
+.rate_button{
+  float: right;
+}
+
+.btn{
+  margin-top: 5px;
+  margin-left: -120px;
+  width:auto;
+  height: auto;
+  padding: 4px;
+  background-color: black;
+  border: solid 1px white;
+  color: white;
+  text-align: center;
+}
+
+.btn .btn-primary :hover{
+  font-weight: bolder;
+  background-color: black;
+}
+
+.social:hover {
+     -webkit-transform: scale(1.1);
+     -moz-transform: scale(1.1);
+     -o-transform: scale(1.1);
+ }
+ .social {
+     -webkit-transform: scale(0.8);
+     -moz-transform: scale(0.8);
+     -o-transform: scale(0.8);
+     -webkit-transition-duration: 0.5s;
+     -moz-transition-duration: 0.5s;
+     -o-transition-duration: 0.5s;
+ }
+
+.foot{
+  background-color: black;
+  border: solid white 4px;
+  padding: 3px;
+}
+
+.foot a{
+  color: white;
+  font-size: 18px;
+}
+
+.foot a:hover{
+  color: black;
+}
+
+ #social-fb,#social-tw,#social-gp,#social-em{
+   color:white;
+ }
+
+ #social-fb:hover {
+     color: #3B5998;
+ }
+ #social-tw:hover {
+     color: #4099FF;
+ }
+ #social-gp:hover {
+     color: #d34836;
+ }
+ #social-em:hover {
+     color: #f39c12;
+ }
+
+.para2{
+  padding: 20px;
+}
+
+.para2 &:first-child{
+    border-right: solid 2px ;
+}
+
+.details{
+  background-color: rgb(250, 250, 250);
+  color:rgb(193, 189, 189);
+}
+
+
+.product_title{
+  width: 320px;
+  height: 40px;
+  background-color:rgb(0, 0, 0,0.5)
+  background-size: cover;
+  text-align: center;
+  padding: 10px;
+}
+
+.product_title_display{
+  color: white;
+  font-size: 20px;
+  line-height: 20px;
+  font-family:'Poiret One', cursive ;
+}
+
+.jumbotron {
+background: rgb(0, 0, 0);
+color: #FFF;
+margin-left: 135px;
+border: solid white 3px;
+border-radius: 0px;
+}
+.jumbotron-sm { padding-top: 24px;
+padding-bottom: 24px; }
+.jumbotron small {
+color: #FFF;
+}
+.h1 small {
+font-size: 24px;
+}
+
+.glyphicon-play:before {
+    content: "\e072";
+}
+
+.active{
+  font-weight: bolder;
+}
+
+.cateogary{
+  font-size: 40px;
+  margin: 30px;
+  float: left;
+}
+
+.btn-lg{
+  color: white;
+  background-color: black;
+  border: none;
+  box-shadow: none;
+}
+
+.sort{
+  font-size: 40px;
+  margin: 30px;
+  float: right;
+}
+
+.white{
+  color: white;
+  text-decoration: none;
+}
+
+.attr{
+  font-size: 20px;
+}
+
+.white:hover{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.landing-page{
+  width: 600px;
+  height:700px;
+  background-color: rgb(218, 236, 222);
+  border: solid black 3px;
+  border-radius: 10%;
+  overflow: hidden;
+}
+
+.landing-page-un{
+  width: 600px;
+  height:700px;
+  background-color: rgb(255, 198, 187);
+  border: solid black 3px;
+  border-radius: 10%;
+  overflow: hidden;
+}
+
+.landing-page-header{
+  background-color: black;
+}
+
+.landing-page-header .logo{
+  margin: 10px;
+}
+
+.landing-page-content{
+  color: rgb(64, 170, 0);
+  size: 30px;
+  font-family: sans-serif;
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+.landing-page-content-un{
+  color: rgb(64, 170, 0);
+  size: 30px;
+  font-family: sans-serif;
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+.landing-page-content-un{
+  color: rgb(255, 0, 0);
+  size: 30px;
+  font-family: sans-serif;
+
+  margin-top: 50px;
+}
+
+.modal-title{
+  text-align: center;
+  color: white;
+  font-family: 'Poiret One', cursive;
+  font-size: 30px;
+  display: block;
+}
+
+.product_display_modal{
+  width: 426.67px;
+  height: 533.33px;
+  background-size: contain;
+  background-position: center center;
+  text-align: center;
+}
+
+.un-img-size{
+  margin: 10px;
+  width: 255px;
+  height: 255px;
+}
+
+
+.black{
+  background-color: black;
+}
+
+.price-modal{
+  color:black;
+  float: left;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@media(max-width:610px){
+  .landing-page{
+    width :300px;
+    height : 500px
+  }
+  .landing-page-un{
+    width :300px;
+    height : 500px
+  }
+  .un-img-size{
+      margin: 10px;
+      width: 155px;
+      height: 155px;
+  }
+}
+
+.tsize{
+  width: 60px;
+}
+
+.spinner {
+  width: 100px;
+  margin-top: -25px;
+}
+.spinner input {
+  text-align: right;
+}
+.input-group-btn-vertical {
+  position: relative;
+  white-space: nowrap;
+  width: 1%;
+  vertical-align: middle;
+  display: table-cell;
+}
+.input-group-btn-vertical > .btn {
+  display: block;
+  float: none;
+  width: 100%;
+  max-width: 100%;
+  padding: 8px;
+  margin-left: 2px;
+  position: relative;
+  border-radius: 0;
+  margin-top: -2.5px;
+}
+.input-group-btn-vertical > .btn:first-child {
+  border-top-right-radius: 4px;
+}
+.input-group-btn-vertical > .btn:last-child {
+  margin-top: -2px;
+  border-bottom-right-radius: 4px;
+}
+.input-group-btn-vertical i{
+  position: absolute;
+  top: 0;
+  left: 4px;
+}
+
+
+.img-aboutus{
+  width :300px;
+  height: 450px;
+  border-radius: 50%;
+}
+
+.img-aboutus_2{
+  width :350px;
+  height: 450px;
+  border-radius: 50%;
+}
